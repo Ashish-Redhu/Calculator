@@ -1,0 +1,54 @@
+.outerMostContainer{
+    /* border: 2px solid green;
+    padding: 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.calculatorContainer{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 2px;
+    /* padding: 2px; */
+    width: 100%;
+}
+.IOContainer{ 
+    border: 1px solid grey;
+    height: 4em;
+    margin: 2px;
+}
+.buttonsContainer{
+    /* border: 2px solid grey; */
+    /* padding: 1px; */
+    margin: 2px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+.eachButton{
+    border: 2px solid red;
+    padding: 1px;
+    width: 100%;
+    height: 4em;
+    /* Box sizing helps to give the height/width to the complete box including border as well. Otherwise in normal cases height/width is set only to the content inside (padding, border) as excluded. */
+    box-sizing: border-box; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button19{
+    grid-column: span 2;
+}
+
+@media screen and (min-width: 900px){
+    .calculatorContainer{
+        width: 50%;
+    }
+    .buttonsContainer{
+        gap: 3px;
+    }
+    
+}
